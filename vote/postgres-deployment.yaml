@@ -9,7 +9,7 @@ spec:
   selector:
     matchLabels:
       app: postgres
-  templates:
+  template:
     metadata:
       labels:
         app: postgres
