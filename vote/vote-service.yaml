@@ -9,6 +9,6 @@ spec:
   ports: 
   - name: "vote-service"
     port: 5000
-    targerPort: 80
+    targetPort: 80
   selector:
     app: vote
