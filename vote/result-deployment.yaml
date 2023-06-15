@@ -6,7 +6,7 @@ metadata:
   name: result
 spec:
   replicas: 1
-  selectors:
+  selector:
     matchLabels:
       app: result
   template:
