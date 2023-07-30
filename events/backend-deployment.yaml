@@ -9,7 +9,7 @@ spec:
   selector:
     matchLabels:
       app: backend
-  templates:
+  template:
     metadata:
       labels:
         app: backend
@@ -18,4 +18,4 @@ spec:
       - image: beingzeeshan/myapps:backend
         name: backend
       imagePullSecrets:
-        - name: beingzeeshanreg
+      - name: beingzeeshanreg

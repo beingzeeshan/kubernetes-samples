@@ -9,7 +9,7 @@ spec:
   selector:
     matchLabels:
       app: mongodb
-  templates:
+  template:
     metadata:
       labels: 
         app: mongodb
