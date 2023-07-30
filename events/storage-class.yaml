@@ -7,5 +7,5 @@ allowVolumeExpansion: true
 parameters:
   type: gp2
   fsType: ext4
+  iopsPerGB: "10"
   zones: us-east-2c
-reclaimPolicy: Delete
