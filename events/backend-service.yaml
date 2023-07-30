@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels: 
+    app: backend
+  name: service
+spec:
+  type: NodePort
+  ports:
+  - name: "backend-service"
+    port: 8000
+    targetPort: 8000
+  selector:
+    app: backend

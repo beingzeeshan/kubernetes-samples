@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: backend
+  name: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  templates:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - image: beingzeeshan/myapps:backend
+        name: backend
+      imagePullSecrets:
+        - name: beingzeeshanreg
