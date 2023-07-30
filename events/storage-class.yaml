@@ -1,5 +1,5 @@
-kind: StorageClass
 apiVersion: storage.k8s.io/v1
+kind: StorageClass
 metadata:
   name: aws-storage-class
 provisioner: ebs.csi.aws.com
@@ -7,5 +7,5 @@ allowVolumeExpansion: true
 parameters:
   type: gp2
   fsType: ext4
-  zone: us-east-2c
+  zones: us-east-2c
 reclaimPolicy: Delete
